@@ -1,31 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "builderswheel",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Builder's Wheel",
+  "description": "A mod based off of Xisumavoid's solution to fix Minecraft's Inventory problem",
   "authors": [
-    "Me!"
+    "wtbarce"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/wtbarce/builders-wheel"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/builderswheel/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.wtbarce.builderswheel.Main"
+    ],
+    "client": [
+      "net.wtbarce.builderswheel.Client"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
-
   "depends": {
     "fabricloader": ">=0.14.9",
     "fabric-api": "*",
